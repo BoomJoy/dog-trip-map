@@ -11,8 +11,7 @@ export const mockMapProvider: MapApiProvider = {
   async loadScript() {
     // TODO: 后续接入高德 / 百度 / 腾讯地图 JS SDK
   },
-  async renderMarkers(places) {
-    void places;
+  async renderMarkers(_places) {
     // TODO: 后续根据 map SDK 的 marker API 渲染点位
   }
 };

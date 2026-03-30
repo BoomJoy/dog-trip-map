@@ -1,8 +1,8 @@
 :root {
   color-scheme: light;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background: #f4f7ff;
-  color: #162033;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #f6f8fb;
+  color: #1f2a37;
 }
 
 * {
@@ -12,10 +12,6 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background:
-    radial-gradient(1200px 500px at 10% -10%, rgba(139, 201, 255, 0.28), transparent 55%),
-    radial-gradient(900px 450px at 100% 0%, rgba(171, 159, 255, 0.2), transparent 60%),
-    linear-gradient(180deg, #f6f9ff 0%, #eef3ff 42%, #f7f9fc 100%);
 }
 
 a {
@@ -25,196 +21,13 @@ a {
 
 main {
   margin: 0 auto;
-  max-width: 1120px;
-  padding: 28px 18px 56px;
-}
-
-.top-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 14px;
-}
-
-.brand {
-  font-size: 17px;
-  font-weight: 800;
-  letter-spacing: 0.01em;
-}
-
-.text-link {
-  color: #3155d4;
-  font-weight: 600;
+  max-width: 1024px;
+  padding: 24px 16px 48px;
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.86);
-  border-radius: 22px;
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
-}
-
-.hero {
-  border-radius: 28px;
-  padding: 42px 34px;
-  background: linear-gradient(135deg, #ffffffd9, #f4f7ffcf 40%, #ebf2ffcc);
-  border: 1px solid rgba(255, 255, 255, 0.9);
-  box-shadow: 0 18px 40px rgba(72, 94, 219, 0.11);
-}
-
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 14px;
-  border-radius: 999px;
-  background: rgba(37, 99, 235, 0.09);
-  border: 1px solid rgba(37, 99, 235, 0.15);
-  font-size: 13px;
-  color: #1d4ed8;
-}
-
-.section-title {
-  margin: 0 0 10px;
-  font-size: 26px;
-  letter-spacing: -0.02em;
-}
-
-.section-subtitle {
-  margin: 0;
-  color: #4a5b78;
-  line-height: 1.6;
-}
-
-.chip-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 14px;
-}
-
-.meta-chip {
-  padding: 8px 12px;
-  border-radius: 999px;
-  background: rgba(99, 118, 255, 0.1);
-  color: #4252bb;
-  font-size: 12px;
-  font-weight: 600;
-}
-
-.search-card {
-  margin-top: 22px;
-  padding: 24px;
-  display: grid;
-  gap: 14px;
-}
-
-.form-label {
-  font-size: 14px;
-  font-weight: 600;
-  color: #31405d;
-}
-
-.form-input {
-  display: block;
-  width: 100%;
-  border: 1px solid #d7deeb;
-  border-radius: 14px;
-  padding: 12px 14px;
-  margin-top: 8px;
-  font-size: 14px;
-  background: rgba(255, 255, 255, 0.9);
-  transition: border-color 120ms ease, box-shadow 120ms ease;
-}
-
-.form-input:focus {
-  outline: none;
-  border-color: #7aa4ff;
-  box-shadow: 0 0 0 4px rgba(82, 125, 238, 0.12);
-}
-
-.primary-btn {
-  border: none;
-  border-radius: 14px;
-  padding: 12px 16px;
-  background: linear-gradient(135deg, #3a73ff, #5a66ff);
-  color: #fff;
-  cursor: pointer;
-  font-size: 15px;
-  font-weight: 700;
-  letter-spacing: 0.01em;
-  box-shadow: 0 10px 20px rgba(60, 103, 255, 0.3);
-}
-
-.primary-btn:hover {
-  transform: translateY(-1px);
-}
-
-.section-head-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-  gap: 12px;
-}
-
-.recommend-grid {
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 12px;
-}
-
-.recommend-card {
-  padding: 16px;
-  border-radius: 22px;
-  background: #ffffffcc;
-  border: 1px solid rgba(255, 255, 255, 0.9);
-  box-shadow: 0 14px 28px rgba(15, 23, 42, 0.06);
-}
-
-.recommend-card h3 {
-  margin: 0 0 8px;
-}
-
-.recommend-card p {
-  margin: 4px 0;
-  color: #4f607c;
-}
-
-.map-header,
-.map-panel,
-.place-card {
-  padding: 18px;
-}
-
-.map-header {
-  margin-bottom: 14px;
-}
-
-.marker-list {
-  padding-left: 18px;
-  margin: 0;
-  display: grid;
-  gap: 8px;
-}
-
-.place-grid {
-  display: grid;
-  gap: 12px;
-}
-
-@media (max-width: 720px) {
-  .hero {
-    padding: 28px 20px;
-  }
-
-  .section-title {
-    font-size: 22px;
-  }
-
-  .section-head-row {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.04);
 }

@@ -43,18 +43,6 @@
 └─ tsconfig.json
 ```
 
-
-## 根目录关键文件
-
-本仓库已包含可直接运行 Next.js 项目的关键文件：
-
-- `package.json`
-- `package-lock.json`
-- `next.config.ts`
-- `tsconfig.json`
-- `next-env.d.ts`
-- `src/`（App Router 页面与组件）
-
 ## 启动方式
 
 > 首次运行需要安装依赖。
@@ -92,8 +80,3 @@ npm run update:places
 - 业务逻辑集中：筛选逻辑统一在 `src/lib/placeService.ts`。
 - 组件尽量小而清晰：页面只做组合，逻辑放在 `lib`。
 - 先保证可运行，再逐步替换真实地图和数据源。
-
-
-## 维护补充
-
-- 当前仓库默认开发分支为 `work`，请在该分支继续迭代并发起 PR。

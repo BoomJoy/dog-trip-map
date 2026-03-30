@@ -2,13 +2,13 @@ import type { DogFriendlyPlace } from '@/lib/types';
 
 export function PlaceList({ places }: { places: DogFriendlyPlace[] }) {
   if (places.length === 0) {
-    return <p className="card map-panel">未找到符合条件的地点，请放宽筛选条件。</p>;
+    return <p className="card" style={{ padding: 16 }}>未找到符合条件的地点，请放宽筛选条件。</p>;
   }
 
   return (
-    <div className="place-grid">
+    <div style={{ display: 'grid', gap: 12 }}>
       {places.map((place) => (
-        <article key={place.id} className="card place-card">
+        <article key={place.id} className="card" style={{ padding: 16 }}>
           <h3 style={{ margin: '0 0 8px' }}>{place.name}</h3>
           <p style={{ margin: '4px 0' }}>
             {place.region} · {place.city} · 约 {place.driveMinutesFromShanghai} 分钟车程
